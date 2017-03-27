@@ -1,0 +1,24 @@
+{
+  "name": "next-boilerplate",
+  "version": "1.0.0",
+  "description": "A starter project for building Next.js apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grraft/next-boilerplate.git"
+  },
+  "keywords": [
+    "next.js",
+    "boilerplate",
+    "starter"
+  ],
+  "author": "Kunal Mandalia <kunal.v.mandalia@gmail.com> (http://kunalmandalia.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grraft/next-boilerplate/issues"
+  },
+  "homepage": "https://github.com/grraft/next-boilerplate#readme"
+}
