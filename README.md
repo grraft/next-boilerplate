@@ -8,5 +8,6 @@ A starter project for building Next.js apps featuring;
 - [ ] styled-jsx         : style
 - [ ] SASS               : pre-processor
 - [ ] babel es6          : js
+- [ ] standard.js        : lint
 - [ ] build script       : production
 - [ ] deploy instruction : AWS, CI
