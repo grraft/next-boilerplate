@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          <link rel='shortcut icon' type='image/x-icon' href='/static/assets/favicon.ico' />
           <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
         </Head>
         <body>
