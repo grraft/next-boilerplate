@@ -9,7 +9,7 @@ A starter project for building Universal React Redux apps with Next.js featuring
 - [x] Jest               : tests
 - [x] Istanbul           : coverage
 - [x] Styled-jsx         : style
-- [ ] SASS               : pre-processor
+- [x] SASS               : pre-processor
 - [x] Babel es6          : js
 - [x] Standard.js        : lint
 - [ ] Travis CI          : build script
