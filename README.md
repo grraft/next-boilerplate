@@ -25,20 +25,18 @@ This project cherry picks the features from next.js's [examples](https://github.
 ## Folder structure
     .
     ├── (.next)                 # Next.js build
-    ├── components              # React (stateless) components
-    ├── containers              # React (stateful) components
+    ├── components              # React components (stateless & stateful)
     ├── (coverage)              # Istanbul coverage report
     ├── (node_modules)
-    ├── pages                   # Next.js pages, React components
+    ├── pages                   # Next.js pages (React components)
     ├── static                  # Static assets served by next
-    ├── test                    # Jest tests `*.test.js`
-    │   ├── components
-    │   ├── containers
-    │   └── pages
-    ├── .babelrc
+    ├── styles                  # Global styles
+    ├── .babelrc                # Babel config
     ├── .gitignore
     ├── LICENSE
+    ├── next.config.js          # Webpack config (sass)
     ├── package.json
+    ├── postcss.config.js       # PostCss config
     ├── README.md
     └── server.js               # Custom Express routes
 
