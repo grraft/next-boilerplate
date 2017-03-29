@@ -1,5 +1,6 @@
 import React from 'react'
 import Document, { Head, Main, NextScript } from 'next/document'
+import stylesheet from '../styles/global.sass'
 
 export default class MyDocument extends Document {
   static getInitialProps ({ renderPage }) {
@@ -11,7 +12,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <link rel='stylesheet' href='/static/css/bundle.css' />
+          <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
         </Head>
         <body>
           {this.props.customValue}
