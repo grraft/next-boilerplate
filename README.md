@@ -1,10 +1,11 @@
 # next-boilerplate
-A starter project for building server side rendered React Redux apps using Next.js featuring;
+A starter project for building Universal React Redux apps with Next.js featuring;
 - [x] React              : view
-- [ ] Redux              : state
-- [ ] Redux Form         : forms, state
+- [x] Redux              : state
+- [x] Redux Devtools     : debug state
+- [x] Redux Form         : forms, state
 - [x] Next.js            : ssr, routing
-- [ ] Node, Express      : custom routes
+- [x] Node server        : custom routes
 - [x] Jest               : tests
 - [x] Istanbul           : coverage
 - [x] Styled-jsx         : style
@@ -15,7 +16,7 @@ A starter project for building server side rendered React Redux apps using Next.
 
 This project cherry picks the features from next.js's [examples](https://github.com/zeit/next.js/tree/master/examples)
 
-## Get started
+## Getting started
 
 1. Clone project `$ git clone https://github.com/grraft/next-boilerplate.git`
 2. Install dependencies `cd next-boilerplate` and `npm install`
@@ -29,6 +30,7 @@ This project cherry picks the features from next.js's [examples](https://github.
     ├── (coverage)              # Istanbul coverage report
     ├── (node_modules)
     ├── pages                   # Next.js pages, React components
+    ├── static                  # Static assets served by next
     ├── test                    # Jest tests `*.test.js`
     │   ├── components
     │   ├── containers
