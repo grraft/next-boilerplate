@@ -14,6 +14,7 @@ export default class MyDocument extends Document {
         <Head>
           <link rel='shortcut icon' type='image/x-icon' href='/static/assets/favicon.ico' />
           <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+          <title>Next Boilerplate</title>
         </Head>
         <body>
           {this.props.customValue}
