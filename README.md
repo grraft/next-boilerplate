@@ -50,7 +50,12 @@ Add React containers (stateful es6 classes) to `./containers` and associated com
 
 `npm test` to run Jest
 
-Jest will test `*.test.js` files regardless of where they are in the project though the convention for this project is to keep tests within the `test` directory. This is to keep tests out of `./pages` which next uses as its router. 
+Jest will test `*.test.js` files regardless of where they are in the project. Placing the test files within the same directory of your code will help
+
+    .
+    ├── code.js                    # React components, pure functions, etc.
+    └── code.test.js               # Jest tests for code.js
+
 
 `npm run coverage` to get an Istanbul coverage report
 
