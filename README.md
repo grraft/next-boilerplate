@@ -1,3 +1,5 @@
+![Next Boilerplate](/static/images/next-boilerplate-logo.png?raw=true "Next Boilerplate")
+
 # next-boilerplate
 A starter project for building Universal React Redux apps with Next.js featuring;
 - [x] React              : view
@@ -12,7 +14,7 @@ A starter project for building Universal React Redux apps with Next.js featuring
 - [x] SASS               : pre-processor
 - [x] Babel es6          : js
 - [x] Standard.js        : lint
-- [ ] Travis CI          : build script
+- [x] Travis CI          : build script
 
 This project cherry picks the features from next.js's [examples](https://github.com/zeit/next.js/tree/master/examples)
 
@@ -33,6 +35,7 @@ This project cherry picks the features from next.js's [examples](https://github.
     ├── styles                  # Global styles
     ├── .babelrc                # Babel config
     ├── .gitignore
+    ├── .travis.yml             # Travis CI settings (including AWS EB deploy)
     ├── LICENSE
     ├── next.config.js          # Webpack config (sass)
     ├── package.json
@@ -60,4 +63,18 @@ Jest will test `*.test.js` files regardless of where they are in the project. Pl
 `npm run coverage` to get an Istanbul coverage report
 
 ## Deploy & Production
+
+Ensure your production build follows at least these steps:
+- `npm test`
+- `npm run build` (which triggers `next build`)
+- `npm run start`
+
+### Continuous Integration
+
+`.travis.yml` show the setup required to have Travis CI run tests and build when pushing to your Github repo. If the build passes Travis will deploy to AWS ElasticBeanstalk (EB).
+
+Note you'll need to:
+- Link Travis to your Github account
+- Configure EB. I used the CLI to eb init, and travis encrypt to generate the secure secret access key
+- Setup a user (and group) on AWS who has the rights to manage EB instances
 
