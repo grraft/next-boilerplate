@@ -2,7 +2,7 @@
 @import 'variables.scss';
 
 * {
-  font-family: Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif
+  font-family: Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif
 }
 
 .align--center {
@@ -18,7 +18,7 @@ body {
 }
 
 .section__hero {
-  background: url("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?dpr=1&auto=compress,format&fit=crop&w=376&h=251&q=80&cs=tinysrgb&crop=") no-repeat center center fixed;
+  background: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?dpr=1&auto=compress,format&fit=crop&w=376&h=251&q=80&cs=tinysrgb&crop=') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -116,4 +116,11 @@ body {
 
 .component__render-status--box-blue {
   background-color: dodgerblue;
+}
+
+.form-group {
+  label {
+    // color: red;
+    display: inherit;
+  }
 }

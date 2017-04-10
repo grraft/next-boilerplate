@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { initStore } from '../redux/store'
-import { startClock, randomQuote } from '../redux/actions'
 import withRedux from 'next-redux-wrapper'
+import { startClock, randomQuote } from '../redux/actions'
 import ContactForm from '../components/ContactForm'
 import SyncValidationForm from '../components/SyncValidationForm'
 import RenderStatus from '../components/RenderStatus'
@@ -10,7 +10,7 @@ import HomeFeatures from '../components/HomeFeatures'
 
 class IndexPage extends React.Component {
   static async getInitialProps ({store, isServer, dispatch}) {
-    store.dispatch(startClock())
+    // store.dispatch(startClock())
     return { isServer, dispatch }
   }
 

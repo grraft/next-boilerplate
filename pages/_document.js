@@ -1,6 +1,6 @@
 import React from 'react'
 import Document, { Head, Main, NextScript } from 'next/document'
-import stylesheet from '../styles/global.sass'
+import stylesheet from '../styles/global.scss'
 
 export default class MyDocument extends Document {
   static getInitialProps ({ renderPage }) {
@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          <meta name='viewport' content='width=device-width, initial-scale=1' />
           <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
           <link rel='shortcut icon' type='image/x-icon' href='/static/assets/favicon.ico' />
           <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' crossOrigin='anonymous' />

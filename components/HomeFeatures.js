@@ -46,7 +46,7 @@ export default () => (
           <ul>
             <li>Manage app state with Redux, form state with Redux-Form. See <Link href='/form-example'><a>examples</a></Link></li>
             <li>Jest unit tests</li>
-            <li>and <Link prefetch href='/complete-features'><a>much more</a></Link></li>
+            <li>and <Link prefetch href='/demo'><a>much more</a></Link></li>
           </ul>
         </div>
       </div>

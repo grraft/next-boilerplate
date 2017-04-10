@@ -5,7 +5,7 @@ import { reducer as reduxFormReducer } from 'redux-form'
 
 // enable devtools if available
 const composeEnhancers = typeof window === 'object' && typeof window.devToolsExtension !== 'undefined' ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : compose
-const reducer = combineReducers({
+export const reducer = combineReducers({
   app: internalReducer,
   form: reduxFormReducer
 })
